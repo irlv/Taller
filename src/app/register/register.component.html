@@ -1,0 +1,72 @@
+
+    <br>
+    <br>
+    <h1>Sitema del Taller Automotris numero #1</h1>
+    <br>
+    <br>
+    <h4 style="text-align: center;">Registro de Entrada</h4>
+    <br>
+    <br>
+    <div class="grid grid-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre(s) del Cliente</label>
+        <div class="col-sm-10" >
+            <input type="text" class="form-control" [(ngModel)]="art.nombres" id="inputEmail3" placeholder="Ejemplo : Marcos Karin">
+        </div>
+    </div>
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Apellidos</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="art.apellidos"  id="inputPassword3" placeholder="Ejemplo : Abarca Nuñes">
+        </div>
+    </div>
+
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">No.Telefono</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="art.telefono"  id="inputPassword3" placeholder="Ejemplo : 965123123">
+        </div>
+    </div>
+
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Direccion</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" [(ngModel)]="art.direccion"  placeholder="Ejemplo : 3a Norte Ponientes">
+        </div>
+    </div>
+    <br>
+    <h3 style="text-align: center;">Datos del Auto a Recibir </h3> 
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Modelo del Auto</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="art.moAuto"  id="inputPassword3" placeholder="Ejemplo : Chevy Pop 2003">
+        </div>
+    </div>
+
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Placas </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" [(ngModel)]="art.placas"  placeholder="Ejemplo : DSZ-999-Z">
+        </div>
+    </div>
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Anotaciones </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" [(ngModel)]="art.observaciones"  placeholder="Ejemplo : El auto Presenta sonidos">
+        </div>
+    </div>
+
+    <div class="grid grid-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Fecha de Ingreso </label>
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="art.fechaIngreso" >
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+    </div>
+
+    <div class="grid grid-3">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" (click)="altaDatos()">Registrar</button>
+        </div>
+    </div>

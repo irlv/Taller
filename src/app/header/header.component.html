@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Menu</a>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/Bitacora">Ver Bitacora
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+    <form class="d-flex">
+      <input [(ngModel)]="art.nombres"class="form-control me-2" type="search" placeholder="Buscar" name="buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success" type="submit" (click)="buescar()">Buscar</button>
+    </form>
+   
+  </nav>
+
+  
+<ol class="list-group list-group-numbered"*ngFor="let art1 of empre">
+   
+  <li class="list-group-item d-flex justify-content-between align-items-start" >
+     
+
+</li>
+
+</ol>
+  <router-outlet></router-outlet>
